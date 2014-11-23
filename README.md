@@ -19,7 +19,7 @@ Just copy and paste those Ottran.h(&).m files to your project.
 
 #### Usage
 
-The only method you will be using is `scoutImageWithURI()`, with the following full signature:
+The only method you will be using is `scoutImageWithURI: andOttranCompletion:`, with the following full signature:
 
 ```objc
 - (void)scoutImageWithURI:(NSString *)uri andOttranCompletion:(OttranCompletionBlock)completion;
@@ -38,9 +38,9 @@ Here's an example:
             } else {
             	NSLog(@"Image Size = %@",NSStringFromCGSize(size));
                 switch (imageType) {
-                    case GIF: NSLog(@"Image Type = GIF); break;
-                    case PNG: NSLog(@"Image Type = PNG); break;
-                    case JPEG: NSLog(@"Image Type = JPEG); break;
+                    case GIF: NSLog(@"Image Type = GIF"); break;
+                    case PNG: NSLog(@"Image Type = PNG"); break;
+                    case JPEG: NSLog(@"Image Type = JPEG"); break;
                     case Unsupported: NSLog(@"Image Type = UnSupported"); break;
                     default: break;
                 }
