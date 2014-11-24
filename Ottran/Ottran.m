@@ -76,6 +76,11 @@ typedef struct GIFSize {
     UInt16 height;
 } GIFSize;
 
+typedef struct BMPSize {
+    UInt32 width;
+    UInt32 height;
+} BMPSize;
+
 typedef NS_ENUM (NSInteger, JPEGHeaderSegment) {
     NextSegment,
     SOFSegment,
@@ -102,11 +107,12 @@ typedef NS_ENUM (NSInteger, JPEGHeaderSegment) {
     if (data.length < sampleLength) { return Unsupported; }
     UInt16 length = 0;
     [data getBytes:&length range:NSMakeRange(0, sampleLength)];
-    
+
     switch (CFSwapInt16(length)) {
         case 0xFFD8: return JPEG; break;
         case 0x8950: return PNG; break;
         case 0x4749: return GIF; break;
+        case 0x424D: return BMP; break;
         default: return Unsupported; break;
     }
 }
@@ -118,6 +124,8 @@ typedef NS_ENUM (NSInteger, JPEGHeaderSegment) {
         case PNG:  return PNGSizeFromData(imageData);
             break;
         case JPEG: return JPEGSizeFromData(imageData);
+            break;
+        case BMP:  return BMPSizeFromData(imageData);
             break;
         case Unsupported: return CGSizeZero;
             break;
@@ -146,16 +154,29 @@ CGSize PNGSizeFromData(NSData *data) {
     return CGSizeMake(CFSwapInt32(imageSize.width), CFSwapInt32(imageSize.height));
 }
 
+#pragma mark - BMP
+
+CGSize BMPSizeFromData(NSData *data) {
+    if ([data length] < 29) { return CGSizeZero; }
+    
+    UInt16 length = 0;
+    [data getBytes:&length range:NSMakeRange(14, 4)];
+    
+    NSRange range = NSMakeRange(18, 8); // if BITMAPINFOHEADER(40)
+    if (length == 12) { range = NSMakeRange(18, 4); } // if BITMAPCOREHEADER(12)
+    
+    BMPSize imageSize = {0, 0};
+    [data getBytes:&imageSize range:range];
+    return CGSizeMake(imageSize.width, imageSize.height);
+}
+
+
 #pragma mark - JPEG
 
 CGSize JPEGSizeFromData(NSData *data) {
     NSInteger offset = 2;
-    CGSize size;
-    if (data.length <= offset) { size = CGSizeZero; }
-    else {
-        size = parseJPEGData(data,offset,NextSegment);
-    }
-    return size;
+    if (data.length <= offset) { return CGSizeZero; }
+    else { return parseJPEGData(data,offset,NextSegment); }
 }
 
 CGSize parseJPEGData(NSData *data, NSInteger offset, JPEGHeaderSegment segment) {
@@ -295,13 +316,13 @@ CGSize parseJPEGData(NSData *data, NSInteger offset, JPEGHeaderSegment segment) 
 @end
 
 @implementation Ottran
+
 - (instancetype)init {
     self = [super init];
     if (self) {
         queue = [NSOperationQueue new];
         operations = [NSMutableDictionary new];
-        _connectionDelegate = [[OttranConnectionDelegate alloc] init];
-        _connectionDelegate.delegate = self;
+        _connectionDelegate = [[OttranConnectionDelegate alloc] initWithDelegate:self];
     }
     return self;
 }
@@ -318,7 +339,8 @@ CGSize parseJPEGData(NSData *data, NSInteger offset, JPEGHeaderSegment segment) 
 {
     NSURL *url = [NSURL URLWithString:uri];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    if (request) {
+    
+    if (uri && request) {
         NSURLConnection *taskConnection = [[NSURLConnection alloc] initWithRequest:request delegate:_connectionDelegate startImmediately:NO];
         
         OttranOperation *_operation = [[OttranOperation alloc] initWithURLConnection:taskConnection];

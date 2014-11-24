@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A0753771A2350EE00738918 /* images.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 4A0753761A2350EE00738918 /* images.bmp */; };
+		4A0753821A2352D600738918 /* test2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A0753781A2352D600738918 /* test2.png */; };
+		4A0753831A2352D600738918 /* faulty.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4A0753791A2352D600738918 /* faulty.jpg */; };
+		4A0753841A2352D600738918 /* test.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 4A07537A1A2352D600738918 /* test.bmp */; };
+		4A0753851A2352D600738918 /* test.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4A07537B1A2352D600738918 /* test.gif */; };
+		4A0753861A2352D600738918 /* test.ico in Resources */ = {isa = PBXBuildFile; fileRef = 4A07537C1A2352D600738918 /* test.ico */; };
+		4A0753871A2352D600738918 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4A07537D1A2352D600738918 /* test.jpg */; };
+		4A0753881A2352D600738918 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A07537E1A2352D600738918 /* test.png */; };
+		4A0753891A2352D600738918 /* test2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4A07537F1A2352D600738918 /* test2.jpg */; };
+		4A07538A1A2352D600738918 /* test3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4A0753801A2352D600738918 /* test3.jpg */; };
+		4A07538B1A2352D600738918 /* test4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4A0753811A2352D600738918 /* test4.jpg */; };
 		4AAF3B6D1A21CCEA004C1B87 /* OttranTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAF3B6C1A21CCEA004C1B87 /* OttranTests.m */; };
 		4AAF3B821A21CE18004C1B87 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAF3B781A21CE18004C1B87 /* AppDelegate.m */; };
 		4AAF3B851A21CE18004C1B87 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AAF3B7D1A21CE18004C1B87 /* Images.xcassets */; };
@@ -27,6 +38,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A0753761A2350EE00738918 /* images.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = images.bmp; sourceTree = "<group>"; };
+		4A0753781A2352D600738918 /* test2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test2.png; sourceTree = "<group>"; };
+		4A0753791A2352D600738918 /* faulty.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = faulty.jpg; sourceTree = "<group>"; };
+		4A07537A1A2352D600738918 /* test.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = test.bmp; sourceTree = "<group>"; };
+		4A07537B1A2352D600738918 /* test.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = test.gif; sourceTree = "<group>"; };
+		4A07537C1A2352D600738918 /* test.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = test.ico; sourceTree = "<group>"; };
+		4A07537D1A2352D600738918 /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
+		4A07537E1A2352D600738918 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
+		4A07537F1A2352D600738918 /* test2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test2.jpg; sourceTree = "<group>"; };
+		4A0753801A2352D600738918 /* test3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test3.jpg; sourceTree = "<group>"; };
+		4A0753811A2352D600738918 /* test4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test4.jpg; sourceTree = "<group>"; };
 		4AAF3B4D1A21CCE7004C1B87 /* Ottran.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ottran.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AAF3B661A21CCEA004C1B87 /* OttranTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OttranTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AAF3B6B1A21CCEA004C1B87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -67,6 +89,17 @@
 			isa = PBXGroup;
 			children = (
 				4AAF3B891A21CE58004C1B87 /* Default-568h@2x.png */,
+				4A0753761A2350EE00738918 /* images.bmp */,
+				4A0753781A2352D600738918 /* test2.png */,
+				4A0753791A2352D600738918 /* faulty.jpg */,
+				4A07537A1A2352D600738918 /* test.bmp */,
+				4A07537B1A2352D600738918 /* test.gif */,
+				4A07537C1A2352D600738918 /* test.ico */,
+				4A07537D1A2352D600738918 /* test.jpg */,
+				4A07537E1A2352D600738918 /* test.png */,
+				4A07537F1A2352D600738918 /* test2.jpg */,
+				4A0753801A2352D600738918 /* test3.jpg */,
+				4A0753811A2352D600738918 /* test4.jpg */,
 				4AAF3B4F1A21CCE7004C1B87 /* Ottran */,
 				4AAF3B691A21CCEA004C1B87 /* OttranTests */,
 				4AAF3B4E1A21CCE7004C1B87 /* Products */,
@@ -204,8 +237,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A0753831A2352D600738918 /* faulty.jpg in Resources */,
+				4A0753871A2352D600738918 /* test.jpg in Resources */,
+				4A0753891A2352D600738918 /* test2.jpg in Resources */,
+				4A0753841A2352D600738918 /* test.bmp in Resources */,
 				4AAF3B861A21CE18004C1B87 /* Info.plist in Resources */,
+				4A0753821A2352D600738918 /* test2.png in Resources */,
+				4A0753851A2352D600738918 /* test.gif in Resources */,
+				4A07538A1A2352D600738918 /* test3.jpg in Resources */,
+				4A0753771A2350EE00738918 /* images.bmp in Resources */,
+				4A07538B1A2352D600738918 /* test4.jpg in Resources */,
 				4AAF3B851A21CE18004C1B87 /* Images.xcassets in Resources */,
+				4A0753861A2352D600738918 /* test.ico in Resources */,
+				4A0753881A2352D600738918 /* test.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

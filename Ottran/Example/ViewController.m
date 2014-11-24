@@ -36,6 +36,8 @@
                         break;
                     case JPEG: NSLog(@"Image Type = JPEG & Image Size = %@",NSStringFromCGSize(size));
                         break;
+                    case BMP: NSLog(@"Image Type = BMP & Image Size = %@",NSStringFromCGSize(size));
+                        break;
                     case Unsupported: NSLog(@"Image Type = UnSupported");
                         break;
                     default:

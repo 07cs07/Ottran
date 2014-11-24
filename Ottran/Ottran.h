@@ -11,6 +11,7 @@ typedef NS_ENUM(NSInteger, OttranImageType) {
     GIF,
     PNG,
     JPEG,
+    BMP,
     Unsupported
 };
 
