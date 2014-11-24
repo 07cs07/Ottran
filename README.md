@@ -1,4 +1,4 @@
-**ஒற்றன் - Ottran** Tamil meaning of Scout
+**ஒற்றன் - Ottran** [Tamil](http://en.wikipedia.org/wiki/Tamil_language) meaning of Scout
 
 **Ottran** is a Objective C implementation of [ImageScout](https://github.com/kaishin/ImageScout), which works in swift too.
 It allows you to find the size and type of a remote image by downloading as little as possible.
@@ -14,6 +14,12 @@ Ottran parses the image data as it is downloaded. As soon as it finds out the si
 it stops the download. The downloaded data is below 60 KB in most cases.
 
 #### Install
+
+###### Installation with CocoaPods
+```objc
+pod 'Ottran'
+```
+######                       (OR)
 
 Just copy and paste those Ottran.h(&).m files to your project.
 
