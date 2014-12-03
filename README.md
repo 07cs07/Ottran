@@ -1,7 +1,7 @@
 **ஒற்றன் - Ottran** [Tamil](http://en.wikipedia.org/wiki/Tamil_language) meaning of Scout
 
 **Ottran** is a Objective C implementation of [ImageScout](https://github.com/kaishin/ImageScout), which works in swift too.
-It allows you to find the size and type of a remote image by downloading as little as possible.
+It allows you to find the size and type of a remote image by downloading as little as possible. Now supports `PNG`, `JPEG`, `GIF` & `BMP`
 
 #### Why?
 
@@ -47,6 +47,7 @@ Here's an example:
                     case GIF: NSLog(@"Image Type = GIF"); break;
                     case PNG: NSLog(@"Image Type = PNG"); break;
                     case JPEG: NSLog(@"Image Type = JPEG"); break;
+                    case BMP: NSLog(@"Image Type = BMP"); break;
                     case Unsupported: NSLog(@"Image Type = UnSupported"); break;
                     default: break;
                 }
