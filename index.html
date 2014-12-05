@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Ottran by 07cs07</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Ottran</h1>
+        <p>ஒற்றன்(Ottran) allows you to find the size and type of a remote image by downloading as little as possible. Supports PNG, GIF, JPEG and BMP.</p>
+
+        <p class="view"><a href="https://github.com/07cs07/Ottran">View the Project on GitHub <small>07cs07/Ottran</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/07cs07/Ottran/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/07cs07/Ottran/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/07cs07/Ottran">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <p><strong>ஒற்றன் - Ottran</strong> <a href="http://en.wikipedia.org/wiki/Tamil_language">Tamil</a> meaning of Scout</p>
+
+<p><strong>Ottran</strong> is a Objective C implementation of <a href="https://github.com/kaishin/ImageScout">ImageScout</a>, which works in swift too.
+It allows you to find the size and type of a remote image by downloading as little as possible. Now supports <code>PNG</code>, <code>JPEG</code>, <code>GIF</code> &amp; <code>BMP</code></p>
+
+<h4>
+<a id="why" class="anchor" href="#why" aria-hidden="true"><span class="octicon octicon-link"></span></a>Why?</h4>
+
+<p>Sometimes you need to know the size of a remote image before downloading it, such as
+using a custom layout in a <code>UICollectionView</code>.</p>
+
+<h4>
+<a id="how" class="anchor" href="#how" aria-hidden="true"><span class="octicon octicon-link"></span></a>How?</h4>
+
+<p>Ottran parses the image data as it is downloaded. As soon as it finds out the size and type of image,
+it stops the download. The downloaded data is below 60 KB in most cases.</p>
+
+<h4>
+<a id="install" class="anchor" href="#install" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install</h4>
+
+<h6>
+<a id="installation-with-cocoapods" class="anchor" href="#installation-with-cocoapods" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation with CocoaPods</h6>
+
+<div class="highlight highlight-objc"><pre>pod <span class="pl-s1"><span class="pl-pds">'</span>Ottran<span class="pl-pds">'</span></span></pre></div>
+
+<h6>
+<a id="or" class="anchor" href="#or" aria-hidden="true"><span class="octicon octicon-link"></span></a>(OR)</h6>
+
+<p>Just copy and paste those Ottran.h(&amp;).m files to your project.</p>
+
+<h4>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h4>
+
+<p>The only method you will be using is <code>scoutImageWithURI: andOttranCompletion:</code>, with the following full signature:</p>
+
+<div class="highlight highlight-objc"><pre>- (<span class="pl-st">void</span>)scoutImageWithURI:(<span class="pl-s3">NSString</span> *)uri andOttranCompletion:(OttranCompletionBlock)completion;
+
+(^OttranCompletionBlock) (<span class="pl-s3">NSError</span> *, CGSize, OttranImageType);</pre></div>
+
+<p>Here's an example:</p>
+
+<div class="highlight highlight-objc"><pre>    Ottran *anScouter = [[Ottran <span class="pl-s3">alloc</span>] <span class="pl-s3">init</span>];
+
+    [anScouter <span class="pl-s3">scoutImageWithURI:</span>path <span class="pl-s3">andOttranCompletion:</span>^(<span class="pl-s3">NSError</span> *error, CGSize size, OttranImageType imageType) {
+            <span class="pl-k">if</span> (error) {
+                <span class="pl-s3">NSLog</span>(<span class="pl-s1"><span class="pl-pds">@"</span>Error = <span class="pl-c1">%@</span><span class="pl-pds">"</span></span>, error);
+            } <span class="pl-k">else</span> {
+                <span class="pl-s3">NSLog</span>(<span class="pl-s1"><span class="pl-pds">@"</span>Image Size = <span class="pl-c1">%@</span><span class="pl-pds">"</span></span>,NSStringFromCGSize(size));
+                <span class="pl-k">switch</span> (imageType) {
+                    <span class="pl-k">case</span> GIF: <span class="pl-s3">NSLog</span>(<span class="pl-s1"><span class="pl-pds">@"</span>Image Type = GIF<span class="pl-pds">"</span></span>); <span class="pl-k">break</span>;
+                    <span class="pl-k">case</span> PNG: <span class="pl-s3">NSLog</span>(<span class="pl-s1"><span class="pl-pds">@"</span>Image Type = PNG<span class="pl-pds">"</span></span>); <span class="pl-k">break</span>;
+                    <span class="pl-k">case</span> JPEG: <span class="pl-s3">NSLog</span>(<span class="pl-s1"><span class="pl-pds">@"</span>Image Type = JPEG<span class="pl-pds">"</span></span>); <span class="pl-k">break</span>;
+                    <span class="pl-k">case</span> BMP: <span class="pl-s3">NSLog</span>(<span class="pl-s1"><span class="pl-pds">@"</span>Image Type = BMP<span class="pl-pds">"</span></span>); <span class="pl-k">break</span>;
+                    <span class="pl-k">case</span> Unsupported: <span class="pl-s3">NSLog</span>(<span class="pl-s1"><span class="pl-pds">@"</span>Image Type = UnSupported<span class="pl-pds">"</span></span>); <span class="pl-k">break</span>;
+                    <span class="pl-k">default</span>: <span class="pl-k">break</span>;
+                }
+            }
+        }];</pre></div>
+
+<p>If the image is not successfully parsed, the error will contain more info about the reason.
+In that case, the size is going to be <code>CGSizeZero</code> and the type <code>Unsupported</code>.</p>
+
+<ul>
+<li>Error code <strong>100</strong>: Invalid URI parameter.</li>
+<li>Error code <strong>101</strong>: Image is corrput or malformatted.</li>
+<li>Error code <strong>102</strong>: Not an image or unsopported image format URL.</li>
+</ul>
+
+<h4>
+<a id="compatibility" class="anchor" href="#compatibility" aria-hidden="true"><span class="octicon octicon-link"></span></a>Compatibility</h4>
+
+<ul>
+<li>iOS 6.0 and above.</li>
+<li>Compiles with Xcode 5 and above.</li>
+</ul>
+
+<h4>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h4>
+
+<p>See LICENSE.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/07cs07">07cs07</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-57378251-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
