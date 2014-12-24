@@ -2,7 +2,9 @@
 //  ViewController.m
 //  Ottran
 //
-//  Created by Balachander M on 23/11/14.
+//  Created by Balachander M on 24/12/14.
+//  Copyright (c) 2014 Balachander M. All rights reserved.
+//
 
 #import "ViewController.h"
 #import "Ottran.h"
@@ -15,12 +17,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
     
     Ottran *anScouter = [[Ottran alloc] init];
     
     NSArray *paths = @[@"http://fc07.deviantart.net/fs71/i/2011/226/6/9/india_flag_by_ninjasoar-d46jzi7.png",
-                       @"http://www.pdms-photography.com/images/stories/Portraits_Pets/childrens_portraits_photography.png",
+                       @"http://images.samogo.net/images/91771388_Stephen_William_Hawking_1.jpg",
                        @"http://myanamika.com/wp-content/uploads/2014/08/india-flag-animate.gif"];
     
     for (NSString *path in paths) {
@@ -46,6 +47,11 @@
             }
         }];
     }
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 @end

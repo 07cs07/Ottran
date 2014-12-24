@@ -2,8 +2,8 @@
 //  AppDelegate.h
 //  Ottran
 //
-//  Created by Ragunath Jawahar on 23/11/14.
-//
+//  Created by Balachander M on 24/12/14.
+//  Copyright (c) 2014 Balachander M. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

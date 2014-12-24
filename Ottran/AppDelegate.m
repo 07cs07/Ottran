@@ -2,7 +2,9 @@
 //  AppDelegate.m
 //  Ottran
 //
-//  Created by Balachander M on 23/11/14.
+//  Created by Balachander M on 24/12/14.
+//  Copyright (c) 2014 Balachander M. All rights reserved.
+//
 
 #import "AppDelegate.h"
 

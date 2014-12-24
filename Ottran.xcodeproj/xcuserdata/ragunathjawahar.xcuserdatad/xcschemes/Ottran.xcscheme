@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0600"
+   LastUpgradeVersion = "0620"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4AAF3B4C1A21CCE6004C1B87"
+               BlueprintIdentifier = "4AE241351A4A93360049CFAE"
                BuildableName = "Ottran.app"
                BlueprintName = "Ottran"
                ReferencedContainer = "container:Ottran.xcodeproj">
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4AAF3B651A21CCEA004C1B87"
+               BlueprintIdentifier = "4AE2414E1A4A93360049CFAE"
                BuildableName = "OttranTests.xctest"
                BlueprintName = "OttranTests"
                ReferencedContainer = "container:Ottran.xcodeproj">
@@ -46,7 +46,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4AAF3B651A21CCEA004C1B87"
+               BlueprintIdentifier = "4AE2414E1A4A93360049CFAE"
                BuildableName = "OttranTests.xctest"
                BlueprintName = "OttranTests"
                ReferencedContainer = "container:Ottran.xcodeproj">
@@ -56,7 +56,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4AAF3B4C1A21CCE6004C1B87"
+            BlueprintIdentifier = "4AE241351A4A93360049CFAE"
             BuildableName = "Ottran.app"
             BlueprintName = "Ottran"
             ReferencedContainer = "container:Ottran.xcodeproj">
@@ -72,10 +72,11 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4AAF3B4C1A21CCE6004C1B87"
+            BlueprintIdentifier = "4AE241351A4A93360049CFAE"
             BuildableName = "Ottran.app"
             BlueprintName = "Ottran"
             ReferencedContainer = "container:Ottran.xcodeproj">
@@ -90,10 +91,11 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4AAF3B4C1A21CCE6004C1B87"
+            BlueprintIdentifier = "4AE241351A4A93360049CFAE"
             BuildableName = "Ottran.app"
             BlueprintName = "Ottran"
             ReferencedContainer = "container:Ottran.xcodeproj">

@@ -3,6 +3,7 @@
 //  Ottran
 //
 //  Created by Balachander M on 23/11/14.
+//  Copyright (c) 2014 Balachander M. All rights reserved.
 
 #import "Ottran.h"
 NSString *const unsupportedFormatErrorMessage = @"Unsupported image format. ImageScout only supports PNG, GIF, and JPEG.";
@@ -335,8 +336,7 @@ CGSize parseJPEGData(NSData *data, NSInteger offset, JPEGHeaderSegment segment) 
  *  @param uri        URL string of the source image
  *  @param completion OttranCompletionBlock that has Optional error (which returns nil when Ottran can image parsed successfully), size and image type
  */
-- (void)scoutImageWithURI:(NSString *)uri andOttranCompletion:(OttranCompletionBlock)completion
-{
+- (void)scoutImageWithURI:(NSString *)uri andOttranCompletion:(OttranCompletionBlock)completion {
     NSURL *url = [NSURL URLWithString:uri];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     
@@ -345,7 +345,7 @@ CGSize parseJPEGData(NSData *data, NSInteger offset, JPEGHeaderSegment segment) 
         
         OttranOperation *_operation = [[OttranOperation alloc] initWithURLConnection:taskConnection];
         __weak OttranOperation *operation = _operation;
-        [operation setCompletionBlock:^(){
+        [operation setCompletionBlock:^() {
             if (completion) {
                 completion(operation.error, operation.size, operation.type);
                 [operations removeObjectForKey:uri];
@@ -395,6 +395,5 @@ CGSize parseJPEGData(NSData *data, NSInteger offset, JPEGHeaderSegment segment) 
     operations[uri] = operation;
     [queue addOperation:operation];
 }
-
 
 @end

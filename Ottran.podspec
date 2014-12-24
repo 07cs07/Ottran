@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
 # Source Info
   s.source       =  {:git => 'https://github.com/07cs07/Ottran.git', :tag => '1.0.1'}
-  s.source_files = 'Ottran'
+  s.source_files = 'Ottran/Source'
   s.requires_arc = true
   
 end

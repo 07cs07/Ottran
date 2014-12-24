@@ -7,75 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4A0753771A2350EE00738918 /* images.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 4A0753761A2350EE00738918 /* images.bmp */; };
-		4A0753821A2352D600738918 /* test2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A0753781A2352D600738918 /* test2.png */; };
-		4A0753831A2352D600738918 /* faulty.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4A0753791A2352D600738918 /* faulty.jpg */; };
-		4A0753841A2352D600738918 /* test.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 4A07537A1A2352D600738918 /* test.bmp */; };
-		4A0753851A2352D600738918 /* test.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4A07537B1A2352D600738918 /* test.gif */; };
-		4A0753861A2352D600738918 /* test.ico in Resources */ = {isa = PBXBuildFile; fileRef = 4A07537C1A2352D600738918 /* test.ico */; };
-		4A0753871A2352D600738918 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4A07537D1A2352D600738918 /* test.jpg */; };
-		4A0753881A2352D600738918 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A07537E1A2352D600738918 /* test.png */; };
-		4A0753891A2352D600738918 /* test2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4A07537F1A2352D600738918 /* test2.jpg */; };
-		4A07538A1A2352D600738918 /* test3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4A0753801A2352D600738918 /* test3.jpg */; };
-		4A07538B1A2352D600738918 /* test4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4A0753811A2352D600738918 /* test4.jpg */; };
-		4AAF3B6D1A21CCEA004C1B87 /* OttranTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAF3B6C1A21CCEA004C1B87 /* OttranTests.m */; };
-		4AAF3B821A21CE18004C1B87 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAF3B781A21CE18004C1B87 /* AppDelegate.m */; };
-		4AAF3B851A21CE18004C1B87 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AAF3B7D1A21CE18004C1B87 /* Images.xcassets */; };
-		4AAF3B861A21CE18004C1B87 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4AAF3B7E1A21CE18004C1B87 /* Info.plist */; };
-		4AAF3B871A21CE18004C1B87 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAF3B7F1A21CE18004C1B87 /* main.m */; };
-		4AAF3B881A21CE18004C1B87 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAF3B811A21CE18004C1B87 /* ViewController.m */; };
-		4AAF3B8D1A21CF7B004C1B87 /* Ottran.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAF3B8C1A21CF7B004C1B87 /* Ottran.m */; };
+		4AE2413C1A4A93360049CFAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2413B1A4A93360049CFAE /* main.m */; };
+		4AE2413F1A4A93360049CFAE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2413E1A4A93360049CFAE /* AppDelegate.m */; };
+		4AE241421A4A93360049CFAE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE241411A4A93360049CFAE /* ViewController.m */; };
+		4AE241451A4A93360049CFAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AE241431A4A93360049CFAE /* Main.storyboard */; };
+		4AE241471A4A93360049CFAE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AE241461A4A93360049CFAE /* Images.xcassets */; };
+		4AE2414A1A4A93360049CFAE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE241481A4A93360049CFAE /* LaunchScreen.xib */; };
+		4AE241561A4A93360049CFAE /* OttranTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE241551A4A93360049CFAE /* OttranTests.m */; };
+		4AE241651A4A93840049CFAE /* Ottran.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE241641A4A93840049CFAE /* Ottran.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4AAF3B671A21CCEA004C1B87 /* PBXContainerItemProxy */ = {
+		4AE241501A4A93360049CFAE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 4AAF3B451A21CCE5004C1B87 /* Project object */;
+			containerPortal = 4AE2412E1A4A93360049CFAE /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4AAF3B4C1A21CCE6004C1B87;
+			remoteGlobalIDString = 4AE241351A4A93360049CFAE;
 			remoteInfo = Ottran;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4A0753761A2350EE00738918 /* images.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = images.bmp; sourceTree = "<group>"; };
-		4A0753781A2352D600738918 /* test2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test2.png; sourceTree = "<group>"; };
-		4A0753791A2352D600738918 /* faulty.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = faulty.jpg; sourceTree = "<group>"; };
-		4A07537A1A2352D600738918 /* test.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = test.bmp; sourceTree = "<group>"; };
-		4A07537B1A2352D600738918 /* test.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = test.gif; sourceTree = "<group>"; };
-		4A07537C1A2352D600738918 /* test.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = test.ico; sourceTree = "<group>"; };
-		4A07537D1A2352D600738918 /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
-		4A07537E1A2352D600738918 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
-		4A07537F1A2352D600738918 /* test2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test2.jpg; sourceTree = "<group>"; };
-		4A0753801A2352D600738918 /* test3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test3.jpg; sourceTree = "<group>"; };
-		4A0753811A2352D600738918 /* test4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test4.jpg; sourceTree = "<group>"; };
-		4AAF3B4D1A21CCE7004C1B87 /* Ottran.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ottran.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4AAF3B661A21CCEA004C1B87 /* OttranTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OttranTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4AAF3B6B1A21CCEA004C1B87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4AAF3B6C1A21CCEA004C1B87 /* OttranTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OttranTests.m; sourceTree = "<group>"; };
-		4AAF3B771A21CE18004C1B87 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		4AAF3B781A21CE18004C1B87 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4AAF3B7A1A21CE18004C1B87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		4AAF3B7C1A21CE18004C1B87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4AAF3B7D1A21CE18004C1B87 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		4AAF3B7E1A21CE18004C1B87 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4AAF3B7F1A21CE18004C1B87 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4AAF3B801A21CE18004C1B87 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4AAF3B811A21CE18004C1B87 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		4AAF3B891A21CE58004C1B87 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		4AAF3B8B1A21CF7B004C1B87 /* Ottran.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ottran.h; sourceTree = "<group>"; };
-		4AAF3B8C1A21CF7B004C1B87 /* Ottran.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ottran.m; sourceTree = "<group>"; };
+		4AE241361A4A93360049CFAE /* Ottran.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ottran.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AE2413A1A4A93360049CFAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AE2413B1A4A93360049CFAE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4AE2413D1A4A93360049CFAE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4AE2413E1A4A93360049CFAE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4AE241401A4A93360049CFAE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4AE241411A4A93360049CFAE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4AE241441A4A93360049CFAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4AE241461A4A93360049CFAE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4AE241491A4A93360049CFAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		4AE2414F1A4A93360049CFAE /* OttranTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OttranTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AE241541A4A93360049CFAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AE241551A4A93360049CFAE /* OttranTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OttranTests.m; sourceTree = "<group>"; };
+		4AE241631A4A93840049CFAE /* Ottran.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ottran.h; sourceTree = "<group>"; };
+		4AE241641A4A93840049CFAE /* Ottran.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ottran.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4AAF3B4A1A21CCE6004C1B87 /* Frameworks */ = {
+		4AE241331A4A93360049CFAE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4AAF3B631A21CCEA004C1B87 /* Frameworks */ = {
+		4AE2414C1A4A93360049CFAE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -85,89 +63,85 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4AAF3B441A21CCE5004C1B87 = {
+		4AE2412D1A4A93360049CFAE = {
 			isa = PBXGroup;
 			children = (
-				4AAF3B891A21CE58004C1B87 /* Default-568h@2x.png */,
-				4A0753761A2350EE00738918 /* images.bmp */,
-				4A0753781A2352D600738918 /* test2.png */,
-				4A0753791A2352D600738918 /* faulty.jpg */,
-				4A07537A1A2352D600738918 /* test.bmp */,
-				4A07537B1A2352D600738918 /* test.gif */,
-				4A07537C1A2352D600738918 /* test.ico */,
-				4A07537D1A2352D600738918 /* test.jpg */,
-				4A07537E1A2352D600738918 /* test.png */,
-				4A07537F1A2352D600738918 /* test2.jpg */,
-				4A0753801A2352D600738918 /* test3.jpg */,
-				4A0753811A2352D600738918 /* test4.jpg */,
-				4AAF3B4F1A21CCE7004C1B87 /* Ottran */,
-				4AAF3B691A21CCEA004C1B87 /* OttranTests */,
-				4AAF3B4E1A21CCE7004C1B87 /* Products */,
+				4AE241381A4A93360049CFAE /* Ottran */,
+				4AE241521A4A93360049CFAE /* OttranTests */,
+				4AE241371A4A93360049CFAE /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		4AAF3B4E1A21CCE7004C1B87 /* Products */ = {
+		4AE241371A4A93360049CFAE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4AAF3B4D1A21CCE7004C1B87 /* Ottran.app */,
-				4AAF3B661A21CCEA004C1B87 /* OttranTests.xctest */,
+				4AE241361A4A93360049CFAE /* Ottran.app */,
+				4AE2414F1A4A93360049CFAE /* OttranTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4AAF3B4F1A21CCE7004C1B87 /* Ottran */ = {
+		4AE241381A4A93360049CFAE /* Ottran */ = {
 			isa = PBXGroup;
 			children = (
-				4AAF3B8B1A21CF7B004C1B87 /* Ottran.h */,
-				4AAF3B8C1A21CF7B004C1B87 /* Ottran.m */,
-				4AAF3B761A21CE17004C1B87 /* Example */,
+				4AE241621A4A93840049CFAE /* Source */,
+				4AE2413D1A4A93360049CFAE /* AppDelegate.h */,
+				4AE2413E1A4A93360049CFAE /* AppDelegate.m */,
+				4AE241401A4A93360049CFAE /* ViewController.h */,
+				4AE241411A4A93360049CFAE /* ViewController.m */,
+				4AE241431A4A93360049CFAE /* Main.storyboard */,
+				4AE241461A4A93360049CFAE /* Images.xcassets */,
+				4AE241481A4A93360049CFAE /* LaunchScreen.xib */,
+				4AE241391A4A93360049CFAE /* Supporting Files */,
 			);
 			path = Ottran;
 			sourceTree = "<group>";
 		};
-		4AAF3B691A21CCEA004C1B87 /* OttranTests */ = {
+		4AE241391A4A93360049CFAE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4AAF3B6C1A21CCEA004C1B87 /* OttranTests.m */,
-				4AAF3B6A1A21CCEA004C1B87 /* Supporting Files */,
-			);
-			path = OttranTests;
-			sourceTree = "<group>";
-		};
-		4AAF3B6A1A21CCEA004C1B87 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				4AAF3B6B1A21CCEA004C1B87 /* Info.plist */,
+				4AE2413A1A4A93360049CFAE /* Info.plist */,
+				4AE2413B1A4A93360049CFAE /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		4AAF3B761A21CE17004C1B87 /* Example */ = {
+		4AE241521A4A93360049CFAE /* OttranTests */ = {
 			isa = PBXGroup;
 			children = (
-				4AAF3B771A21CE18004C1B87 /* AppDelegate.h */,
-				4AAF3B781A21CE18004C1B87 /* AppDelegate.m */,
-				4AAF3B791A21CE18004C1B87 /* LaunchScreen.xib */,
-				4AAF3B7B1A21CE18004C1B87 /* Main.storyboard */,
-				4AAF3B7D1A21CE18004C1B87 /* Images.xcassets */,
-				4AAF3B7E1A21CE18004C1B87 /* Info.plist */,
-				4AAF3B7F1A21CE18004C1B87 /* main.m */,
-				4AAF3B801A21CE18004C1B87 /* ViewController.h */,
-				4AAF3B811A21CE18004C1B87 /* ViewController.m */,
+				4AE241551A4A93360049CFAE /* OttranTests.m */,
+				4AE241531A4A93360049CFAE /* Supporting Files */,
 			);
-			path = Example;
+			path = OttranTests;
+			sourceTree = "<group>";
+		};
+		4AE241531A4A93360049CFAE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4AE241541A4A93360049CFAE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4AE241621A4A93840049CFAE /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				4AE241631A4A93840049CFAE /* Ottran.h */,
+				4AE241641A4A93840049CFAE /* Ottran.m */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4AAF3B4C1A21CCE6004C1B87 /* Ottran */ = {
+		4AE241351A4A93360049CFAE /* Ottran */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4AAF3B701A21CCEA004C1B87 /* Build configuration list for PBXNativeTarget "Ottran" */;
+			buildConfigurationList = 4AE241591A4A93360049CFAE /* Build configuration list for PBXNativeTarget "Ottran" */;
 			buildPhases = (
-				4AAF3B491A21CCE6004C1B87 /* Sources */,
-				4AAF3B4A1A21CCE6004C1B87 /* Frameworks */,
-				4AAF3B4B1A21CCE6004C1B87 /* Resources */,
+				4AE241321A4A93360049CFAE /* Sources */,
+				4AE241331A4A93360049CFAE /* Frameworks */,
+				4AE241341A4A93360049CFAE /* Resources */,
 			);
 			buildRules = (
 			);
@@ -175,45 +149,46 @@
 			);
 			name = Ottran;
 			productName = Ottran;
-			productReference = 4AAF3B4D1A21CCE7004C1B87 /* Ottran.app */;
+			productReference = 4AE241361A4A93360049CFAE /* Ottran.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4AAF3B651A21CCEA004C1B87 /* OttranTests */ = {
+		4AE2414E1A4A93360049CFAE /* OttranTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4AAF3B731A21CCEA004C1B87 /* Build configuration list for PBXNativeTarget "OttranTests" */;
+			buildConfigurationList = 4AE2415C1A4A93360049CFAE /* Build configuration list for PBXNativeTarget "OttranTests" */;
 			buildPhases = (
-				4AAF3B621A21CCEA004C1B87 /* Sources */,
-				4AAF3B631A21CCEA004C1B87 /* Frameworks */,
-				4AAF3B641A21CCEA004C1B87 /* Resources */,
+				4AE2414B1A4A93360049CFAE /* Sources */,
+				4AE2414C1A4A93360049CFAE /* Frameworks */,
+				4AE2414D1A4A93360049CFAE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4AAF3B681A21CCEA004C1B87 /* PBXTargetDependency */,
+				4AE241511A4A93360049CFAE /* PBXTargetDependency */,
 			);
 			name = OttranTests;
 			productName = OttranTests;
-			productReference = 4AAF3B661A21CCEA004C1B87 /* OttranTests.xctest */;
+			productReference = 4AE2414F1A4A93360049CFAE /* OttranTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		4AAF3B451A21CCE5004C1B87 /* Project object */ = {
+		4AE2412E1A4A93360049CFAE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0600;
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Balachander M";
 				TargetAttributes = {
-					4AAF3B4C1A21CCE6004C1B87 = {
-						CreatedOnToolsVersion = 6.0.1;
+					4AE241351A4A93360049CFAE = {
+						CreatedOnToolsVersion = 6.2;
 					};
-					4AAF3B651A21CCEA004C1B87 = {
-						CreatedOnToolsVersion = 6.0.1;
-						TestTargetID = 4AAF3B4C1A21CCE6004C1B87;
+					4AE2414E1A4A93360049CFAE = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 4AE241351A4A93360049CFAE;
 					};
 				};
 			};
-			buildConfigurationList = 4AAF3B481A21CCE5004C1B87 /* Build configuration list for PBXProject "Ottran" */;
+			buildConfigurationList = 4AE241311A4A93360049CFAE /* Build configuration list for PBXProject "Ottran" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -221,39 +196,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 4AAF3B441A21CCE5004C1B87;
-			productRefGroup = 4AAF3B4E1A21CCE7004C1B87 /* Products */;
+			mainGroup = 4AE2412D1A4A93360049CFAE;
+			productRefGroup = 4AE241371A4A93360049CFAE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4AAF3B4C1A21CCE6004C1B87 /* Ottran */,
-				4AAF3B651A21CCEA004C1B87 /* OttranTests */,
+				4AE241351A4A93360049CFAE /* Ottran */,
+				4AE2414E1A4A93360049CFAE /* OttranTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4AAF3B4B1A21CCE6004C1B87 /* Resources */ = {
+		4AE241341A4A93360049CFAE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A0753831A2352D600738918 /* faulty.jpg in Resources */,
-				4A0753871A2352D600738918 /* test.jpg in Resources */,
-				4A0753891A2352D600738918 /* test2.jpg in Resources */,
-				4A0753841A2352D600738918 /* test.bmp in Resources */,
-				4AAF3B861A21CE18004C1B87 /* Info.plist in Resources */,
-				4A0753821A2352D600738918 /* test2.png in Resources */,
-				4A0753851A2352D600738918 /* test.gif in Resources */,
-				4A07538A1A2352D600738918 /* test3.jpg in Resources */,
-				4A0753771A2350EE00738918 /* images.bmp in Resources */,
-				4A07538B1A2352D600738918 /* test4.jpg in Resources */,
-				4AAF3B851A21CE18004C1B87 /* Images.xcassets in Resources */,
-				4A0753861A2352D600738918 /* test.ico in Resources */,
-				4A0753881A2352D600738918 /* test.png in Resources */,
+				4AE241451A4A93360049CFAE /* Main.storyboard in Resources */,
+				4AE2414A1A4A93360049CFAE /* LaunchScreen.xib in Resources */,
+				4AE241471A4A93360049CFAE /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4AAF3B641A21CCEA004C1B87 /* Resources */ = {
+		4AE2414D1A4A93360049CFAE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -263,56 +228,56 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4AAF3B491A21CCE6004C1B87 /* Sources */ = {
+		4AE241321A4A93360049CFAE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AAF3B881A21CE18004C1B87 /* ViewController.m in Sources */,
-				4AAF3B871A21CE18004C1B87 /* main.m in Sources */,
-				4AAF3B821A21CE18004C1B87 /* AppDelegate.m in Sources */,
-				4AAF3B8D1A21CF7B004C1B87 /* Ottran.m in Sources */,
+				4AE241421A4A93360049CFAE /* ViewController.m in Sources */,
+				4AE2413F1A4A93360049CFAE /* AppDelegate.m in Sources */,
+				4AE2413C1A4A93360049CFAE /* main.m in Sources */,
+				4AE241651A4A93840049CFAE /* Ottran.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4AAF3B621A21CCEA004C1B87 /* Sources */ = {
+		4AE2414B1A4A93360049CFAE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AAF3B6D1A21CCEA004C1B87 /* OttranTests.m in Sources */,
+				4AE241561A4A93360049CFAE /* OttranTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4AAF3B681A21CCEA004C1B87 /* PBXTargetDependency */ = {
+		4AE241511A4A93360049CFAE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4AAF3B4C1A21CCE6004C1B87 /* Ottran */;
-			targetProxy = 4AAF3B671A21CCEA004C1B87 /* PBXContainerItemProxy */;
+			target = 4AE241351A4A93360049CFAE /* Ottran */;
+			targetProxy = 4AE241501A4A93360049CFAE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4AAF3B791A21CE18004C1B87 /* LaunchScreen.xib */ = {
+		4AE241431A4A93360049CFAE /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4AAF3B7A1A21CE18004C1B87 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-		4AAF3B7B1A21CE18004C1B87 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4AAF3B7C1A21CE18004C1B87 /* Base */,
+				4AE241441A4A93360049CFAE /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4AE241481A4A93360049CFAE /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4AE241491A4A93360049CFAE /* Base */,
+			);
+			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		4AAF3B6E1A21CCEA004C1B87 /* Debug */ = {
+		4AE241571A4A93360049CFAE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -346,14 +311,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
-		4AAF3B6F1A21CCEA004C1B87 /* Release */ = {
+		4AE241581A4A93360049CFAE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -381,36 +346,34 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		4AAF3B711A21CCEA004C1B87 /* Debug */ = {
+		4AE2415A1A4A93360049CFAE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Ottran/Example/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				INFOPLIST_FILE = Ottran/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		4AAF3B721A21CCEA004C1B87 /* Release */ = {
+		4AE2415B1A4A93360049CFAE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Ottran/Example/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				INFOPLIST_FILE = Ottran/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
-		4AAF3B741A21CCEA004C1B87 /* Debug */ = {
+		4AE2415D1A4A93360049CFAE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -429,7 +392,7 @@
 			};
 			name = Debug;
 		};
-		4AAF3B751A21CCEA004C1B87 /* Release */ = {
+		4AE2415E1A4A93360049CFAE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -447,34 +410,32 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4AAF3B481A21CCE5004C1B87 /* Build configuration list for PBXProject "Ottran" */ = {
+		4AE241311A4A93360049CFAE /* Build configuration list for PBXProject "Ottran" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4AAF3B6E1A21CCEA004C1B87 /* Debug */,
-				4AAF3B6F1A21CCEA004C1B87 /* Release */,
+				4AE241571A4A93360049CFAE /* Debug */,
+				4AE241581A4A93360049CFAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4AAF3B701A21CCEA004C1B87 /* Build configuration list for PBXNativeTarget "Ottran" */ = {
+		4AE241591A4A93360049CFAE /* Build configuration list for PBXNativeTarget "Ottran" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4AAF3B711A21CCEA004C1B87 /* Debug */,
-				4AAF3B721A21CCEA004C1B87 /* Release */,
+				4AE2415A1A4A93360049CFAE /* Debug */,
+				4AE2415B1A4A93360049CFAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		4AAF3B731A21CCEA004C1B87 /* Build configuration list for PBXNativeTarget "OttranTests" */ = {
+		4AE2415C1A4A93360049CFAE /* Build configuration list for PBXNativeTarget "OttranTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4AAF3B741A21CCEA004C1B87 /* Debug */,
-				4AAF3B751A21CCEA004C1B87 /* Release */,
+				4AE2415D1A4A93360049CFAE /* Debug */,
+				4AE2415E1A4A93360049CFAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 4AAF3B451A21CCE5004C1B87 /* Project object */;
+	rootObject = 4AE2412E1A4A93360049CFAE /* Project object */;
 }
