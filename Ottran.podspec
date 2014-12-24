@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'Ottran'
-  s.version      = '1.0.1'
+  s.version      = '1.0.2'
   s.license      = {:type => 'MIT'}
   s.authors      = {'Balachander M' => 'chicjai@gmail.com'}
   s.homepage     = 'https://github.com/07cs07/Ottran'
@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '6.0'
 
 # Source Info
-  s.source       =  {:git => 'https://github.com/07cs07/Ottran.git', :tag => '1.0.1'}
+  s.source       =  {:git => 'https://github.com/07cs07/Ottran.git', :tag => '1.0.2'}
   s.source_files = 'Ottran/Source'
   s.requires_arc = true
   
